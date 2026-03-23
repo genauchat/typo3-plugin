@@ -1,55 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:genauchat/Resources/Private/Language/locallang_mod.xlf" product-name="genauchat">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:genauchat/Resources/Private/Language/locallang_mod.xlf" product-name="genauchat">
         <header/>
         <body>
             <trans-unit id="title">
                 <source>genau.chat</source>
+                <target>genau.chat</target>
             </trans-unit>
             <trans-unit id="description">
                 <source>AI chat widget settings</source>
+                <target>KI-Chat-Widget Einstellungen</target>
             </trans-unit>
             <trans-unit id="shortDescription">
                 <source>Configure genau.chat widget</source>
+                <target>genau.chat Widget konfigurieren</target>
             </trans-unit>
             <trans-unit id="saved">
                 <source>Settings saved.</source>
+                <target>Einstellungen wurden gespeichert.</target>
             </trans-unit>
             <trans-unit id="subtitle">
                 <source>AI operator that turns website visitors into customers</source>
+                <target>KI-Operator, der Website-Besucher in Kunden verwandelt</target>
             </trans-unit>
             <trans-unit id="badge.active">
                 <source>Widget active</source>
+                <target>Widget aktiv</target>
             </trans-unit>
             <trans-unit id="badge.inactive">
                 <source>Not configured</source>
+                <target>Nicht konfiguriert</target>
             </trans-unit>
             <trans-unit id="toggle.label">
                 <source>Widget enabled</source>
+                <target>Widget aktiviert</target>
             </trans-unit>
             <trans-unit id="toggle.description">
                 <source>Show widget on all pages</source>
+                <target>Widget auf allen Seiten anzeigen</target>
             </trans-unit>
             <trans-unit id="widgetCode.label">
                 <source>Widget code</source>
+                <target>Widget-Code</target>
             </trans-unit>
             <trans-unit id="widgetCode.help">
                 <source>Paste your widget code from your account at</source>
+                <target>Fügen Sie den Widget-Code aus Ihrem Konto auf</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
+                <target>Speichern</target>
             </trans-unit>
             <trans-unit id="step1">
                 <source>Sign up at</source>
+                <target>Registrieren Sie sich auf</target>
             </trans-unit>
             <trans-unit id="step2">
                 <source>Add your website and copy the widget code</source>
+                <target>Website hinzufügen und Widget-Code kopieren</target>
             </trans-unit>
             <trans-unit id="step3">
                 <source>Paste the code above and click &lt;strong&gt;Save&lt;/strong&gt;</source>
+                <target>Code oben einfügen und auf &lt;strong&gt;Speichern&lt;/strong&gt; klicken</target>
             </trans-unit>
             <trans-unit id="step4">
                 <source>Widget appears on all pages in the bottom right</source>
+                <target>Widget erscheint auf allen Seiten unten rechts</target>
             </trans-unit>
         </body>
     </file>

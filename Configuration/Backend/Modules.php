@@ -11,11 +11,7 @@ return [
         'access' => 'admin',
         'extensionName' => 'Genauchat',
         'iconIdentifier' => 'genauchat-module',
-        'labels' => [
-            'title' => 'genau.chat',
-            'description' => 'KI-Chat-Widget Einstellungen',
-            'shortDescription' => 'genau.chat Widget konfigurieren',
-        ],
+        'labels' => 'LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf',
         'controllerActions' => [
             SettingsController::class => ['index', 'save'],
         ],

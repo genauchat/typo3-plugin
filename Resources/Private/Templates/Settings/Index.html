@@ -6,7 +6,7 @@
     <f:if condition="{saved}">
         <div class="gc-alert">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-            Einstellungen wurden gespeichert.
+            <f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:saved" />
         </div>
     </f:if>
 
@@ -18,19 +18,19 @@
         </div>
         <div>
             <h1>genau.chat</h1>
-            <p>KI-Operator, der Website-Besucher in Kunden verwandelt</p>
+            <p><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:subtitle" /></p>
         </div>
         <f:if condition="{isActive}">
             <f:then>
                 <div class="gc-badge gc-badge--active">
                     <span class="gc-dot gc-dot--active"></span>
-                    Widget aktiv
+                    <f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:badge.active" />
                 </div>
             </f:then>
             <f:else>
                 <div class="gc-badge gc-badge--inactive">
                     <span class="gc-dot gc-dot--inactive"></span>
-                    Nicht konfiguriert
+                    <f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:badge.inactive" />
                 </div>
             </f:else>
         </f:if>
@@ -43,26 +43,26 @@
                        <f:if condition="{enabled}">checked="checked"</f:if> />
                 <span class="gc-switch"></span>
                 <div>
-                    <div class="gc-toggle-label">Widget aktiviert</div>
-                    <div class="gc-toggle-desc">Widget auf allen Seiten anzeigen</div>
+                    <div class="gc-toggle-label"><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:toggle.label" /></div>
+                    <div class="gc-toggle-desc"><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:toggle.description" /></div>
                 </div>
             </label>
             <div class="gc-card-body">
-                <label class="gc-label" for="gc-script">Widget-Code</label>
+                <label class="gc-label" for="gc-script"><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:widgetCode.label" /></label>
                 <textarea
                     id="gc-script"
                     name="script"
                     class="gc-textarea"
                     rows="4"
-                    placeholder='&lt;script src="https://genau.chat/widget.js" data-widget-id="IHRE_ID"&gt;&lt;/script&gt;'
+                    placeholder='&lt;script src="https://genau.chat/widget.js" data-widget-id="YOUR_ID"&gt;&lt;/script&gt;'
                 ><f:format.raw>{script}</f:format.raw></textarea>
                 <p class="gc-hint">
-                    Fügen Sie den Widget-Code aus Ihrem Konto auf
-                    <a href="https://genau.chat" target="_blank" rel="noopener noreferrer">genau.chat</a> ein.
+                    <f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:widgetCode.help" />
+                    <a href="https://genau.chat" target="_blank" rel="noopener noreferrer">genau.chat</a>.
                 </p>
             </div>
             <div class="gc-footer">
-                <button type="submit" class="gc-btn">Speichern</button>
+                <button type="submit" class="gc-btn"><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:save" /></button>
             </div>
         </f:form>
     </div>
@@ -70,19 +70,19 @@
     <div class="gc-steps">
         <div class="gc-step">
             <div class="gc-step-num">1</div>
-            <p>Registrieren Sie sich auf <a href="https://genau.chat" target="_blank" rel="noopener">genau.chat</a></p>
+            <p><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:step1" /> <a href="https://genau.chat" target="_blank" rel="noopener">genau.chat</a></p>
         </div>
         <div class="gc-step">
             <div class="gc-step-num">2</div>
-            <p>Website hinzufügen und Widget-Code kopieren</p>
+            <p><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:step2" /></p>
         </div>
         <div class="gc-step">
             <div class="gc-step-num">3</div>
-            <p>Code oben einfügen und auf <strong>Speichern</strong> klicken</p>
+            <p><f:format.raw><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:step3" /></f:format.raw></p>
         </div>
         <div class="gc-step">
             <div class="gc-step-num">4</div>
-            <p>Widget erscheint auf allen Seiten unten rechts</p>
+            <p><f:translate key="LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf:step4" /></p>
         </div>
     </div>
 
