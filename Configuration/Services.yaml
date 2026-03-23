@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Genauchat\Typo3Plugin\Controller\SettingsController:
+    public: true
+
+  Genauchat\Typo3Plugin\Middleware\ScriptInjector:
+    public: true

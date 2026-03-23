@@ -1,0 +1,29 @@
+{
+    "name": "genauchat/typo3-plugin",
+    "type": "typo3-cms-extension",
+    "description": "Adds the genau.chat AI chat widget to your TYPO3 website. Easy setup via backend module.",
+    "license": "GPL-2.0-or-later",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "genau.chat",
+            "homepage": "https://genau.chat"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-backend": "^13.4",
+        "typo3/cms-extbase": "^13.4",
+        "typo3/cms-fluid": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Genauchat\\Typo3Plugin\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "genauchat"
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="gc-wrap">
+
+    <f:if condition="{saved}">
+        <div class="gc-alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            Einstellungen wurden gespeichert.
+        </div>
+    </f:if>
+
+    <div class="gc-header">
+        <div class="gc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </div>
+        <div>
+            <h1>genau.chat</h1>
+            <p>KI-Operator, der Website-Besucher in Kunden verwandelt</p>
+        </div>
+        <f:if condition="{isActive}">
+            <f:then>
+                <div class="gc-badge gc-badge--active">
+                    <span class="gc-dot gc-dot--active"></span>
+                    Widget aktiv
+                </div>
+            </f:then>
+            <f:else>
+                <div class="gc-badge gc-badge--inactive">
+                    <span class="gc-dot gc-dot--inactive"></span>
+                    Nicht konfiguriert
+                </div>
+            </f:else>
+        </f:if>
+    </div>
+
+    <div class="gc-card">
+        <f:form action="save" method="post">
+            <label class="gc-toggle">
+                <input type="checkbox" name="enabled" value="1"
+                       <f:if condition="{enabled}">checked="checked"</f:if> />
+                <span class="gc-switch"></span>
+                <div>
+                    <div class="gc-toggle-label">Widget aktiviert</div>
+                    <div class="gc-toggle-desc">Widget auf allen Seiten anzeigen</div>
+                </div>
+            </label>
+            <div class="gc-card-body">
+                <label class="gc-label" for="gc-script">Widget-Code</label>
+                <textarea
+                    id="gc-script"
+                    name="script"
+                    class="gc-textarea"
+                    rows="4"
+                    placeholder='&lt;script src="https://genau.chat/widget.js" data-widget-id="IHRE_ID"&gt;&lt;/script&gt;'
+                ><f:format.raw>{script}</f:format.raw></textarea>
+                <p class="gc-hint">
+                    Fügen Sie den Widget-Code aus Ihrem Konto auf
+                    <a href="https://genau.chat" target="_blank" rel="noopener noreferrer">genau.chat</a> ein.
+                </p>
+            </div>
+            <div class="gc-footer">
+                <button type="submit" class="gc-btn">Speichern</button>
+            </div>
+        </f:form>
+    </div>
+
+    <div class="gc-steps">
+        <div class="gc-step">
+            <div class="gc-step-num">1</div>
+            <p>Registrieren Sie sich auf <a href="https://genau.chat" target="_blank" rel="noopener">genau.chat</a></p>
+        </div>
+        <div class="gc-step">
+            <div class="gc-step-num">2</div>
+            <p>Website hinzufügen und Widget-Code kopieren</p>
+        </div>
+        <div class="gc-step">
+            <div class="gc-step-num">3</div>
+            <p>Code oben einfügen und auf <strong>Speichern</strong> klicken</p>
+        </div>
+        <div class="gc-step">
+            <div class="gc-step-num">4</div>
+            <p>Widget erscheint auf allen Seiten unten rechts</p>
+        </div>
+    </div>
+
+</div>
+
+</html>

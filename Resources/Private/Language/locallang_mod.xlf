@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="EXT:genauchat/Resources/Private/Language/locallang_mod.xlf" product-name="genauchat">
+        <header/>
+        <body>
+            <trans-unit id="title">
+                <source>genau.chat</source>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>KI-Chat-Widget Einstellungen</source>
+            </trans-unit>
+            <trans-unit id="shortDescription">
+                <source>genau.chat Widget konfigurieren</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
