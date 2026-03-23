@@ -11,7 +11,9 @@ return [
         'access' => 'admin',
         'extensionName' => 'Genauchat',
         'iconIdentifier' => 'genauchat-module',
-        'labels' => 'LLL:EXT:genauchat/Resources/Private/Language/locallang_mod.xlf',
+        'labels' => [
+            'title' => 'genau.chat',
+        ],
         'controllerActions' => [
             SettingsController::class => ['index', 'save'],
         ],
