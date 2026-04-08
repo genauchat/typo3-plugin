@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'genau.chat Widget',
-    'description'      => ''description' => 'AI-powered chat widget for TYPO3. Answers customer questions 24/7, generates leads automatically. Easy 5-minute setup via backend module. Supports TYPO3 12, 13 LTS, 14.',
+    'description'      => 'AI-powered chat widget for TYPO3. Answers customer questions 24/7, generates leads automatically. Easy 5-minute setup via backend module. Supports TYPO3 12, 13 LTS, 14.',
     'category'         => 'plugin',
     'author'           => 'Andrii Golik',
     'author_email'     => 'info@genau.chat',
